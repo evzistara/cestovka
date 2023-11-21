@@ -1,0 +1,133 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  font: "Montserrat", sans-serif;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.header__logo {
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.menu__item {
+  color: #f03000;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 20px;
+}
+.menu__item:hover {
+  color: white;
+  background-color: #f03000;
+  padding: 20px;
+}
+
+.trip {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: space-between;
+  color: white;
+  min-height: 150px;
+  margin-bottom: 20px;
+}
+
+.trip__title {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+}
+
+.trip__price {
+  color: white;
+  background-color: #f03000;
+  padding: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  order: 1;
+}
+
+.trip__info {
+  order: 2;
+}
+
+.trip--main {
+  min-height: 240px;
+  background-image: url(/images/palmy.png);
+  background-size: cover;
+}
+
+.trip--main .trip__title {
+  font-size: 28px;
+}
+
+.trip--canyon {
+  background-image: url(/images/podkova.png);
+  background-size: cover;
+}
+
+.trip--kanaria {
+  background-image: url(/images/zatoka.png);
+  background-size: cover;
+}
+
+.USP {
+  background-color: #f0f0f0;
+  display: flex;
+  gap: 30px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.USP__headline {
+  color: #f03000;
+  font-size: 18px;
+}
+
+.USP__icon {
+  text-align: right;
+  margin-left: 30px;
+  width: 50px;
+}
+
+.USP__icon img {
+  max-width: 100%;
+}
+
+.section__div {
+  margin: 40px 0px;
+}
+
+.section__title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.blog__item {
+  background-color: #f0f0f0;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.blog__date {
+  color: #888888;
+}
+
+.blog__header {
+  color: #f03000;
+}/*# sourceMappingURL=styles.css.map */
