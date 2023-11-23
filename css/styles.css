@@ -1,3 +1,56 @@
+.trip {
+  position: relative;
+  color: black;
+  height: 150px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.trip__title {
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  margin: 0;
+  z-index: 2;
+}
+
+.trip__price {
+  color: white;
+  background-color: #f03000;
+  padding: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-self: flex-start;
+}
+
+.flex {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.trip--main {
+  min-height: 240px;
+}
+
+.trip--main .trip__title {
+  font-size: 28px;
+}
+
+.trip__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 150px;
+  width: 100%;
+  z-index: 1;
+}
+
+.trip--main .trip__image {
+  height: 240px;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -35,55 +88,6 @@ body {
   color: white;
   background-color: #f03000;
   padding: 20px;
-}
-
-.trip {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  justify-content: space-between;
-  color: white;
-  min-height: 150px;
-  margin-bottom: 20px;
-}
-
-.trip__title {
-  font-weight: bold;
-  font-size: 20px;
-  margin: 0;
-}
-
-.trip__price {
-  color: white;
-  background-color: #f03000;
-  padding: 10px;
-  width: -moz-fit-content;
-  width: fit-content;
-  order: 1;
-}
-
-.trip__info {
-  order: 2;
-}
-
-.trip--main {
-  min-height: 240px;
-  background-image: url(/images/palmy.png);
-  background-size: cover;
-}
-
-.trip--main .trip__title {
-  font-size: 28px;
-}
-
-.trip--canyon {
-  background-image: url(/images/podkova.png);
-  background-size: cover;
-}
-
-.trip--kanaria {
-  background-image: url(/images/zatoka.png);
-  background-size: cover;
 }
 
 .USP {

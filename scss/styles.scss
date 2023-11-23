@@ -1,6 +1,6 @@
-$highlight: #f03000;
-$background: #f0f0f0;
-$font: "Montserrat", sans-serif;
+@use "trip";
+
+@use "colors";
 
 html {
   box-sizing: border-box;
@@ -11,7 +11,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  font: $font;
+  font: colors.$font;
   font-size: 16px;
   padding: 20px;
 }
@@ -28,63 +28,20 @@ body {
 }
 
 .menu__item {
-  color: $highlight;
+  color: colors.$highlight;
   text-decoration: none;
   font-size: 18px;
   padding: 20px;
 
   &:hover {
     color: white;
-    background-color: $highlight;
+    background-color: colors.$highlight;
     padding: 20px;
   }
 }
 
-.trip {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  justify-content: space-between;
-  color: white;
-  min-height: 150px;
-  margin-bottom: 20px;
-}
-.trip__title {
-  font-weight: bold;
-  font-size: 20px;
-  margin: 0;
-}
-.trip__price {
-  color: white;
-  background-color: $highlight;
-  padding: 10px;
-  width: fit-content;
-  order: 1;
-}
-
-.trip__info {
-  order: 2;
-}
-.trip--main {
-  min-height: 240px;
-  background-image: url(/images/palmy.png);
-  background-size: cover;
-}
-
-.trip--main .trip__title {
-  font-size: 28px;
-}
-
-.trip--canyon {
-  background-image: url(/images/podkova.png);
-  background-size: cover;
-}
-.trip--kanaria {
-  background-image: url(/images/zatoka.png);
-  background-size: cover;
-}
 .USP {
-  background-color: $background;
+  background-color: colors.$background;
   display: flex;
   gap: 30px;
   margin-bottom: 10px;
@@ -92,7 +49,7 @@ body {
 }
 
 .USP__headline {
-  color: $highlight;
+  color: colors.$highlight;
   font-size: 18px;
 }
 
@@ -116,7 +73,7 @@ body {
 }
 
 .blog__item {
-  background-color: $background;
+  background-color: colors.$background;
   margin-bottom: 20px;
   padding: 20px;
 }
@@ -124,5 +81,5 @@ body {
   color: #888888;
 }
 .blog__header {
-  color: $highlight;
+  color: colors.$highlight;
 }

@@ -1,0 +1,51 @@
+@use "colors";
+
+.trip {
+  position: relative;
+  color: black;
+  height: 150px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.trip__title {
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  margin: 0;
+  z-index: 2;
+}
+.trip__price {
+  color: white;
+  background-color: colors.$highlight;
+  padding: 10px;
+  width: fit-content;
+  align-self: flex-start;
+}
+
+.flex {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.trip--main {
+  min-height: 240px;
+}
+
+.trip--main .trip__title {
+  font-size: 28px;
+}
+
+.trip__image {
+  object-fit: cover;
+  height: 150px;
+  width: 100%;
+  z-index: 1;
+}
+
+.trip--main .trip__image {
+  height: 240px;
+}
