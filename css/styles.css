@@ -37,14 +37,6 @@
   left: 10px;
 }
 
-.flex {
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  z-index: 2;
-}
-
 .trip--main {
   min-height: 240px;
 }
