@@ -132,6 +132,7 @@ body {
   }
   .grid--flip {
     grid-auto-flow: dense;
+    grid-template-columns: 0.3fr 0.7fr;
   }
   .trip--flip {
     grid-column: 2/3;
