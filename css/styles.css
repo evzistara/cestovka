@@ -6,21 +6,35 @@
   margin-bottom: 20px;
 }
 
+.trip__image {
+  display: block;
+  height: 150px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.trip__info {
+  position: absolute;
+  color: white;
+  bottom: 10px;
+  left: 10px;
+}
+
 .trip__title {
   font-weight: bold;
-  color: white;
   font-size: 20px;
   margin: 0;
-  z-index: 2;
 }
 
 .trip__price {
   color: white;
   background-color: #f03000;
   padding: 10px;
-  width: -moz-fit-content;
-  width: fit-content;
-  align-self: flex-start;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
 .flex {
@@ -39,18 +53,45 @@
   font-size: 28px;
 }
 
-.trip__image {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 150px;
-  width: 100%;
-  z-index: 1;
-}
-
 .trip--main .trip__image {
   height: 240px;
 }
 
+@media screen and (min-width: 480px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .trip--main {
+    grid-column: span 2;
+  }
+  .trip,
+  .trip__image {
+    height: 180px;
+  }
+  .trip--main {
+    height: 370px;
+  }
+  .trip--main .trip__image {
+    height: 370px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .grid {
+    grid-template-rows: 180px 180px;
+  }
+  .trip--main {
+    grid-row: span 2;
+    grid-column: 1/2;
+  }
+  .trip__image {
+    height: 100%;
+  }
+  .header {
+    margin-bottom: 40px;
+  }
+}
 html {
   box-sizing: border-box;
 }
@@ -106,7 +147,8 @@ body {
 .USP__icon {
   text-align: right;
   margin-left: 30px;
-  width: 50px;
+  width: 30px;
+  display: block;
 }
 
 .USP__icon img {
@@ -120,6 +162,7 @@ body {
 .section__title {
   font-size: 24px;
   font-weight: bold;
+  margin-top: 30px;
 }
 
 .blog__item {
@@ -130,8 +173,60 @@ body {
 
 .blog__date {
   color: #888888;
+  margin: 0;
+}
+
+.blog__text {
+  margin: 0;
 }
 
 .blog__header {
   color: #f03000;
+}
+
+.footer {
+  background-color: #444444;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .USP {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    gap: 0px;
+  }
+  .USP__icon {
+    margin-left: 0px;
+    height: 30px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu {
+    margin: 10px;
+  }
+  .menu__item {
+    padding: 5px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .section__div {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .blog {
+    display: flex;
+    gap: 10px;
+  }
+  .grid--flip {
+    grid-auto-flow: dense;
+  }
+  .trip--flip {
+    grid-column: 2/3;
+  }
 }/*# sourceMappingURL=styles.css.map */

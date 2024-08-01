@@ -24,13 +24,12 @@
         <a class="menu__item" href="#">Časté otázky</a>
       </nav>
     </header>
+
     <!-- TRIP SECTION -->
     <section class="section">
       <div class="grid">
         <div class="trip trip--main">
-          <div class="trip__image">
-            <img src="/images/palmy.png" alt="palmy" />
-          </div>
+          <img class="trip__image" src="/images/palmy.png" alt="palmy" />
           <div class="trip__info">
             <h3 class="trip__title">Pohoda pod palmami</h3>
             <p class="trip__description">
@@ -41,19 +40,15 @@
         </div>
 
         <div class="trip">
-          <div class="trip__image">
-            <img src="/images/podkova.png" alt="podkova" />
+          <img class="trip__image" src="/images/jezero2.png" alt="podkova" />
+          <div class="trip__info">
+            <h3 class="trip__title">Klid u jezera</h3>
           </div>
-          <div class="flex">
-            <div class="trip__info">
-              <h3 class="trip__title">Klid u jezera</h3>
-            </div>
-            <div class="trip__price">8 490 Kč</div>
-          </div>
+          <div class="trip__price">8 490 Kč</div>
         </div>
 
         <div class="trip">
-          <img src="/images/zatoka.png" alt="zatoka" class="trip__image" />
+          <img class="trip__image" src="/images/nakole.png" alt="zatoka" />
           <div class="trip__info">
             <h3 class="trip__title">Výlet na kole</h3>
           </div>
@@ -65,7 +60,7 @@
 
     <!-- USP SECTION -->
     <section class="section">
-      <div class="section__div">
+      <div class="grid section__div">
         <div class="USP">
           <img src="images/map.svg" alt="" class="USP__icon" />
           <div>
@@ -78,9 +73,7 @@
         </div>
 
         <div class="USP">
-          <div class="USP__icon">
-            <img src="images/plane.svg" alt="icon" />
-          </div>
+          <img class="USP__icon" src="images/plane.svg" alt="icon" />
           <div>
             <h3 class="USP__headline">Služby na letišti</h3>
             <p class="USP__text">
@@ -91,9 +84,8 @@
         </div>
 
         <div class="USP">
-          <div class="USP__icon">
-            <img src="images/globe.svg" alt="icon" />
-          </div>
+          <img class="USP__icon" src="images/globe.svg" alt="icon" />
+
           <div>
             <h3 class="USP__headline">Do celého světa</h3>
             <p class="USP__text">
@@ -104,9 +96,8 @@
         </div>
 
         <div class="USP">
-          <div class="USP__icon">
-            <img src="images/shield.svg" alt="icon" />
-          </div>
+          <img class="USP__icon" src="images/shield.svg" alt="icon" />
+
           <div>
             <h3 class="USP__headline">Vaše bezpečí</h3>
             <p class="USP__text">
@@ -123,29 +114,39 @@
     <section class="section">
       <h2 class="section__title">Last minute zájezdy</h2>
 
-      <div class="grid">
-        <div class="trip">
-          <img src="" alt="" class="trip__photo" />
-          <h3 class="trip__title">Romantika u horského jezera</h3>
-          <p class="trip__description">
-            Dechberoucí výhledy na horské štíty a zrcadlovou hladinu jezera.
-          </p>
+      <div class="grid grid--flip">
+        <div class="trip trip--main trip--flip">
+          <img class="trip__image" src="images/lodicka.png" alt="" />
+          <div class="trip__info">
+            <h3 class="trip__title">Romantika u horského jezera</h3>
+            <p class="trip__description">
+              Dechberoucí výhledy na horské štíty a zrcadlovou hladinu jezera.
+            </p>
+          </div>
           <div class="trip__price">15 900 Kč</div>
         </div>
 
         <div class="trip">
-          <img src="" alt="" class="trip__photo" />
-          <h3 class="trip__title">Grand Canyon</h3>
+          <img src="images/podkova.png" alt="" class="trip__image" />
+
+          <div class="trip__info">
+            <h3 class="trip__title">Grand Canyon</h3>
+          </div>
           <div class="trip__price">18 500 Kč</div>
         </div>
 
         <div class="trip">
-          <img src="" alt="" class="trip__photo" />
-          <h3 class="trip__title">Pěšky po Kanárských ostrovech</h3>
+          <img src="images/zatoka.png" alt="" class="trip__image" />
+          <div class="trip__info">
+            <h3 class="trip__title">Pěšky po Kanárských ostrovech</h3>
+          </div>
           <div class="trip__price">8 900 Kč</div>
         </div>
       </div>
     </section>
+    <!-- LAST MINUTE SECTION END -->
+
+    <!-- BLOG STARTS -->
 
     <section class="section">
       <h2 class="section__title">Novinky</h2>
